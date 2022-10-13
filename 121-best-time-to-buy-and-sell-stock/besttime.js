@@ -4,7 +4,7 @@ const bestTime = (arr) => {
     for (let index = 0; index < arr.length; index++) {
         const price = arr[index];     
         if(price < min) {
-            min = price;
+            min = price; // for every element, we are calculating the difference between that element and the minimum of all the values before that element
         } else if (price - min > profit)  { // check for profit
             profit = price  - min;
         }
