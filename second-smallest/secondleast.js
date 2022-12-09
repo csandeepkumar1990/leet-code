@@ -13,9 +13,9 @@ const secondSmallest = (array) => {
         }
 
         if(element < min) {
-            secondMin = min;
+            secondMin = min; // storing the value of min because we have a new min
             min = element;
-        } else if(element < secondMin && element > min) {
+        } else if(element < secondMin && element > min) { // should be less the second min and greater than the most min
             secondMin = element;
         }
     }
